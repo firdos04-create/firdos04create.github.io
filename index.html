@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Jam Jam Cloth Store</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:#ffffff;
+    color:#333;
+}
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:20px 8%;
+    background:#fff;
+    box-shadow:0 2px 10px rgba(0,0,0,0.08);
+    position:sticky;
+    top:0;
+}
+
+.logo{
+    font-size:30px;
+    font-weight:700;
+    color:#000;
+}
+
+.logo span{
+    color:#d4af37;
+}
+
+nav a{
+    text-decoration:none;
+    color:#333;
+    margin-left:25px;
+    font-weight:600;
+}
+
+nav a:hover{
+    color:#d4af37;
+}
+
+.hero{
+    height:90vh;
+    background:linear-gradient(rgba(255,255,255,0.35),rgba(255,255,255,0.35)),
+    url("https://images.unsplash.com/photo-1445205170230-053b83016050?auto=format&fit=crop&w=1600&q=80");
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+}
+
+.hero-content{
+    background:rgba(255,255,255,0.92);
+    padding:40px;
+    border-radius:15px;
+    max-width:650px;
+    box-shadow:0 10px 25px rgba(0,0,0,0.15);
+}
+
+.hero h1{
+    font-size:50px;
+    color:#111;
+}
+
+.hero p{
+    margin:20px 0;
+    font-size:18px;
+    color:#555;
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 35px;
+    background:#d4af37;
+    color:#fff;
+    text-decoration:none;
+    border-radius:30px;
+    font-weight:bold;
+}
+
+.btn:hover{
+    background:#b88a00;
+}
+
+section{
+    padding:70px 8%;
+}
+
+.title{
+    text-align:center;
+    font-size:38px;
+    margin-bottom:40px;
+}
+
+.products{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:#fff;
+    border-radius:12px;
+    overflow:hidden;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:.3s;
+}
+
+.card:hover{
+    transform:translateY(-8px);
+}
+
+.card img{
+    width:100%;
+    height:280px;
+    object-fit:cover;
+}
+
+.card h3{
+    padding:15px;
+}
+
+.card p{
+    padding:0 15px 20px;
+    color:#666;
+}
+
+.about{
+    background:#f8f8f8;
+    text-align:center;
+}
+
+.about p{
+    max-width:850px;
+    margin:auto;
+    line-height:1.8;
+    color:#555;
+}
+
+.contact{
+    text-align:center;
+}
+
+.contact p{
+    margin:12px 0;
+    font-size:18px;
+}
+
+footer{
+    background:#111;
+    color:#fff;
+    text-align:center;
+    padding:20px;
+}
+
+@media(max-width:768px){
+
+header{
+    flex-direction:column;
+}
+
+nav{
+    margin-top:15px;
+}
+
+.hero h1{
+    font-size:36px;
+}
+
+.hero-content{
+    padding:25px;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="logo">Jam Jam <span>Cloth Store</span></div>
+
+<nav>
+<a href="#">Home</a>
+<a href="#collection">Collection</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</nav>
+
+</header>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Welcome to Jam Jam Cloth Store</h1>
+
+<p>Discover premium fashion for men, women, and kids with the latest styles at affordable prices.</p>
+
+<a href="#collection" class="btn">Shop Collection</a>
+
+</div>
+
+</section>
+
+<section id="collection">
+
+<h2 class="title">Featured Collection</h2>
+
+<div class="products">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?auto=format&fit=crop&w=800&q=80">
+<h3>Men's Collection</h3>
+<p>Premium shirts, T-shirts, jeans and ethnic wear.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1496747611176-843222e1e57c?auto=format&fit=crop&w=800&q=80">
+<h3>Women's Collection</h3>
+<p>Elegant dresses, kurtis, sarees and fashionable outfits.</p>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1519238263530-99bdd11df2ea?auto=format&fit=crop&w=800&q=80">
+<h3>Kids Collection</h3>
+<p>Comfortable and stylish clothing for children.</p>
+</div>
+
+</div>
+
+</section>
+
+<section class="about" id="about">
+
+<h2 class="title">About Us</h2>
+
+<p>
+<strong>Jam Jam Cloth Store</strong> is dedicated to providing high-quality fashion for every occasion.
+Our mission is to deliver stylish clothing, excellent customer service, and affordable prices.
+The store is proudly owned and managed by <strong>Rukaiya Begum</strong>.
+</p>
+
+</section>
+
+<section class="contact" id="contact">
+
+<h2 class="title">Contact Us</h2>
+
+<p><strong>Owner:</strong> Rukaiya Begum</p>
+
+<p>📞 <strong>Phone:</strong> 9214984496</p>
+
+<p>📧 <strong>Email:</strong> jamjamclothstore@gmail.com</p>
+
+<p>🕒 <strong>Business Hours:</strong> Monday – Sunday | 9:00 AM – 9:00 PM</p>
+
+</section>
+
+<footer>
+
+<p>&copy; 2026 Jam Jam Cloth Store. All Rights Reserved.</p>
+
+</footer>
+
+</body>
+</html>
